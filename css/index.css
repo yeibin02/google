@@ -142,7 +142,7 @@ nav > #menu:hover{
 .plus ul li:hover .hover_bg img{
   opacity: 1;
   transition: opacity 1s ease-in-out;
-  transition-delay: 0.3s;
+  transition-delay: 0.5s;
 }
 .plus ul li a{
   display: flex;
@@ -165,11 +165,14 @@ nav > #menu:hover{
   transition: 0.3s;
 }
 .plus ul li .hover_bg img{
+  width: 20px;
+  height: 20px;
   position: absolute;
   top: 10px;
   right: 0;
   font-size: 14px;
   transition: 1s;
+  opacity: 1;
 }
 .bg{
   width: 60px;
