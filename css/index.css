@@ -118,46 +118,80 @@ nav > #menu > .googlebg:hover{
 nav > #menu:hover{
   opacity: 1.5;
 }
-.menubar{
-  position: relative;
-  margin-bottom: 70px;
-  width: 100%;
-  height: 100px;
-  background-color: #004bcd;
+/* plus */
+.plus{
+  width: 50%;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 360px;
+  margin-bottom: 30px;
 }
-.menubar > ul > li{
-  margin: auto
-  
-  ;
-  margin: 50px;
+.plus ul{
+  display: flex;
+  justify-content: space-between;
+}
+.plus ul li{
   list-style: none;
-  float: left;
+  position: relative;
 }
-.menubar p{
-  width: 65px;
-  height: 15px;
-  line-height: 15px;
-  position: absolute;
-  left: 47.8%;
+.plus ul li:hover .hover_bg{
+  opacity: 1;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 }
-.menubar .span1{
+.plus ul li:hover .hover_bg img{
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  transition-delay: 0.3s;
+}
+.plus ul li a{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+}
+.plus ul li .hover_bg{
   position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: #aeaeae95;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 107px;
+  background-color: rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: 0.3s;
+}
+.plus ul li .hover_bg img{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 14px;
+  transition: 1s;
+}
+.bg{
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  top: 5px;
-  left: 47.2%;
-
+  background-color: rgba(0,0,0,0.1);
+  position: relative;
+  margin-bottom: 10px;
 }
-.menubar .span2{
+.plus ul li a img{
   position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: #4d637456;
-  right: 45.8%;
-z-index: 0;
+  top: 23%;
+  width: 30px;
+  height: 30px;
 }
-.menubar:hover .span2{
-  
+.plus ul li a span{
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+  line-height: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
 }
