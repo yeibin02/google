@@ -168,7 +168,7 @@ nav > #menu:hover{
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 0;
   font-size: 14px;
   transition: 1s;
@@ -190,7 +190,8 @@ nav > #menu:hover{
 }
 .plus ul li a span{
   text-align: center;
-  font-size: 14px;
+  /* !important 시켜주면 더 중요하다고 판단되어 값이 먹힘*/
+  font-size: 14px !important;
   color: #333;
   line-height: 17px;
   white-space: nowrap;
